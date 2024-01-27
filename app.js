@@ -2,9 +2,9 @@ const express = require('express');
 const bcryptjs = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
-const io = require('socket.io')(8080, {
+const io = require('socket.io')(8081, {
     cors: {
-        origin: 'http://localhost:3002',
+        origin: '*',
     }
 });
 
